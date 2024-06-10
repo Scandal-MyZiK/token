@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Token</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <nav class="header__menu wow fadeInDown">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#" class="header__link">Pre Sale</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Об игре</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">ГеймПлей</a>
+            </li>
+          </ul>
+          <a href="/">
+            <div class="logo">
+              <span class="logo__text">TReasure</span>
+              <div class="logo__img">
+                <img
+                  class="logo__img-wrapper"
+                  src="./image/logo.png"
+                  alt="logo"
+                />
+              </div>
+              <span class="logo__text">Hunters</span>
+            </div>
+          </a>
+          <ul class="header__list header__list--little">
+            <li class="header__item">
+              <a href="#" class="header__link">Токеномика</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">RoadMap</a>
+            </li>
+            <li class="header__item">
+              <a href="#" target="_blank" class="header__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px"
+                  height="25px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(255, 255, 255)"
+                    d="M12.904,24.978 C6.124,24.978 0.628,19.481 0.628,12.702 C0.628,5.922 6.124,0.426 12.904,0.426 C19.683,0.426 25.179,5.922 25.179,12.702 C25.179,19.481 19.683,24.978 12.904,24.978 ZM12.904,1.542 C6.740,1.542 1.744,6.539 1.744,12.702 C1.744,18.865 6.740,23.862 12.904,23.862 C19.067,23.862 24.063,18.865 24.063,12.702 C24.063,6.539 19.067,1.542 12.904,1.542 ZM15.327,18.078 C15.275,18.078 15.244,18.060 15.214,18.020 C14.327,16.858 12.519,14.497 12.497,14.469 C12.437,14.536 10.356,16.909 9.371,18.031 C9.352,18.053 9.317,18.075 9.290,18.075 C8.732,18.078 7.604,18.073 7.586,18.068 C8.953,16.508 10.313,14.956 11.678,13.399 C10.238,11.519 8.802,9.644 7.356,7.755 C7.401,7.755 9.736,7.756 10.876,7.753 C10.944,7.753 10.986,7.773 11.028,7.827 C11.830,8.890 13.458,11.035 13.472,11.053 C13.614,10.891 15.508,8.727 16.316,7.807 C16.339,7.781 16.382,7.757 16.416,7.757 C16.958,7.754 18.073,7.757 18.107,7.758 C16.826,9.220 15.555,10.670 14.280,12.126 C15.781,14.107 17.279,16.083 18.785,18.072 C18.750,18.074 16.452,18.077 15.327,18.078 ZM10.483,8.800 C10.464,8.776 10.433,8.746 10.408,8.746 C10.078,8.743 9.749,8.744 9.402,8.744 C9.425,8.775 13.620,14.257 15.704,16.980 C15.733,17.019 15.762,17.034 15.811,17.034 C16.087,17.032 16.682,17.030 16.712,17.027 C16.690,16.998 11.199,9.744 10.483,8.800 Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="header__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px"
+                  height="25px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(255, 255, 255)"
+                    d="M12.847,24.978 C6.067,24.978 0.571,19.481 0.571,12.702 C0.571,5.922 6.067,0.426 12.847,0.426 C19.627,0.426 25.123,5.922 25.123,12.702 C25.123,19.481 19.627,24.978 12.847,24.978 ZM12.847,1.542 C6.684,1.542 1.687,6.539 1.687,12.702 C1.687,18.865 6.684,23.862 12.847,23.862 C19.011,23.862 24.007,18.865 24.007,12.702 C24.007,6.539 19.011,1.542 12.847,1.542 ZM16.633,17.255 C16.633,17.255 16.569,17.990 16.026,18.118 C15.482,18.246 14.587,17.670 14.427,17.542 C14.299,17.446 12.028,16.008 11.197,15.304 C10.973,15.113 10.717,14.729 11.229,14.281 C12.380,13.226 13.755,11.915 14.587,11.084 C14.970,10.700 15.354,9.805 13.755,10.892 C11.485,12.458 9.246,13.930 9.246,13.930 C9.246,13.930 8.735,14.249 7.775,13.962 C6.816,13.673 5.697,13.290 5.697,13.290 C5.697,13.290 4.929,12.810 6.240,12.299 C6.240,12.299 11.773,10.029 13.691,9.230 C14.427,8.910 16.921,7.887 16.921,7.887 C16.921,7.887 18.072,7.439 17.976,8.526 C17.944,8.974 17.688,10.541 17.433,12.235 C17.049,14.633 16.633,17.255 16.633,17.255 Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <ul class="header__list-mobi">
+            <li class="header__item">
+              <a href="#" class="header__link">Pre Sale</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Об игре</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">ГеймПлей</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">Токеномика</a>
+            </li>
+            <li class="header__item">
+              <a href="#" class="header__link">RoadMap</a>
+            </li>
+            <li class="header__item">
+              <a href="#" target="_blank" class="header__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px"
+                  height="25px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(255, 255, 255)"
+                    d="M12.904,24.978 C6.124,24.978 0.628,19.481 0.628,12.702 C0.628,5.922 6.124,0.426 12.904,0.426 C19.683,0.426 25.179,5.922 25.179,12.702 C25.179,19.481 19.683,24.978 12.904,24.978 ZM12.904,1.542 C6.740,1.542 1.744,6.539 1.744,12.702 C1.744,18.865 6.740,23.862 12.904,23.862 C19.067,23.862 24.063,18.865 24.063,12.702 C24.063,6.539 19.067,1.542 12.904,1.542 ZM15.327,18.078 C15.275,18.078 15.244,18.060 15.214,18.020 C14.327,16.858 12.519,14.497 12.497,14.469 C12.437,14.536 10.356,16.909 9.371,18.031 C9.352,18.053 9.317,18.075 9.290,18.075 C8.732,18.078 7.604,18.073 7.586,18.068 C8.953,16.508 10.313,14.956 11.678,13.399 C10.238,11.519 8.802,9.644 7.356,7.755 C7.401,7.755 9.736,7.756 10.876,7.753 C10.944,7.753 10.986,7.773 11.028,7.827 C11.830,8.890 13.458,11.035 13.472,11.053 C13.614,10.891 15.508,8.727 16.316,7.807 C16.339,7.781 16.382,7.757 16.416,7.757 C16.958,7.754 18.073,7.757 18.107,7.758 C16.826,9.220 15.555,10.670 14.280,12.126 C15.781,14.107 17.279,16.083 18.785,18.072 C18.750,18.074 16.452,18.077 15.327,18.078 ZM10.483,8.800 C10.464,8.776 10.433,8.746 10.408,8.746 C10.078,8.743 9.749,8.744 9.402,8.744 C9.425,8.775 13.620,14.257 15.704,16.980 C15.733,17.019 15.762,17.034 15.811,17.034 C16.087,17.032 16.682,17.030 16.712,17.027 C16.690,16.998 11.199,9.744 10.483,8.800 Z"
+                  />
+                </svg>
+              </a>
+              <a href="#" target="_blank" class="header__link">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  width="26px"
+                  height="25px"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    fill="rgb(255, 255, 255)"
+                    d="M12.847,24.978 C6.067,24.978 0.571,19.481 0.571,12.702 C0.571,5.922 6.067,0.426 12.847,0.426 C19.627,0.426 25.123,5.922 25.123,12.702 C25.123,19.481 19.627,24.978 12.847,24.978 ZM12.847,1.542 C6.684,1.542 1.687,6.539 1.687,12.702 C1.687,18.865 6.684,23.862 12.847,23.862 C19.011,23.862 24.007,18.865 24.007,12.702 C24.007,6.539 19.011,1.542 12.847,1.542 ZM16.633,17.255 C16.633,17.255 16.569,17.990 16.026,18.118 C15.482,18.246 14.587,17.670 14.427,17.542 C14.299,17.446 12.028,16.008 11.197,15.304 C10.973,15.113 10.717,14.729 11.229,14.281 C12.380,13.226 13.755,11.915 14.587,11.084 C14.970,10.700 15.354,9.805 13.755,10.892 C11.485,12.458 9.246,13.930 9.246,13.930 C9.246,13.930 8.735,14.249 7.775,13.962 C6.816,13.673 5.697,13.290 5.697,13.290 C5.697,13.290 4.929,12.810 6.240,12.299 C6.240,12.299 11.773,10.029 13.691,9.230 C14.427,8.910 16.921,7.887 16.921,7.887 C16.921,7.887 18.072,7.439 17.976,8.526 C17.944,8.974 17.688,10.541 17.433,12.235 C17.049,14.633 16.633,17.255 16.633,17.255 Z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button class="menu-btn">
+            <span></span>
+          </button>
+        </nav>
+        <div class="header__content header-content wow fadeInUp">
+          <img
+            src="./image/header-content.png"
+            alt=""
+            class="header-content__img"
+          />
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="treasure">
+        <div class="container treasure-container">
+          <ul class="treasure-container__left wow fadeInLeft">
+            <li class="treasure-container__item">
+              <div class="treasure-container__icon-block">
+                <img
+                  src="./image/treasure-icon1.png"
+                  alt=""
+                  class="treasure-container__icon"
+                />
+              </div>
+              <span class="treasure-container__info">15 локаций</span>
+            </li>
+            <li class="treasure-container__item">
+              <div class="treasure-container__icon-block">
+                <img
+                  src="./image/treasure-icon2.png"
+                  alt=""
+                  class="treasure-container__icon"
+                />
+              </div>
+              <span class="treasure-container__info">открывай ячейки</span>
+            </li>
+          </ul>
+          <canvas class="treasure-container__animation" id="animation"></canvas>
+          <div
+            class="treasure-container__center treasure-container-center wow fadeInUp"
+          >
+            <div
+              class="treasure-container-center__add treasure-container-center__add--top"
+            >
+              <div class="treasure-container-center__round">
+                <img
+                  src="./image/plus.svg"
+                  alt=""
+                  class="treasure-container-center__icon"
+                />
+              </div>
+              <p class="treasure-container-center__text">
+                Описание лопаты или элемента лопаты, любой текст
+              </p>
+            </div>
+            <div
+              class="treasure-container-center__add treasure-container-center__add--center"
+            >
+              <div class="treasure-container-center__round">
+                <img
+                  src="./image/plus.svg"
+                  alt=""
+                  class="treasure-container-center__icon"
+                />
+              </div>
+              <p class="treasure-container-center__text">
+                Описание лопаты или элемента лопаты, любой текст
+              </p>
+            </div>
+            <div
+              class="treasure-container-center__add treasure-container-center__add--bottom"
+            >
+              <div class="treasure-container-center__round">
+                <img
+                  src="./image/plus.svg"
+                  alt=""
+                  class="treasure-container-center__icon"
+                />
+              </div>
+              <p class="treasure-container-center__text">
+                Описание лопаты или элемента лопаты, любой текст
+              </p>
+            </div>
+            <img
+              class="treasure-container__shelter"
+              src="./image/treasure-shelter.png"
+              alt=""
+            />
+          </div>
+          <ul class="treasure-container__right wow fadeInRight">
+            <li class="treasure-container__item">
+              <div
+                class="treasure-container__icon-block treasure-container__icon-block--small"
+              >
+                <img
+                  src="./image/treasure-icon3.png"
+                  alt=""
+                  class="treasure-container__icon"
+                />
+              </div>
+              <span class="treasure-container__info"
+                >Добывай токен TSHARDS</span
+              >
+            </li>
+            <li class="treasure-container__item">
+              <div class="treasure-container__icon-block">
+                <img
+                  src="./image/treasure-ico4.png"
+                  alt=""
+                  class="treasure-container__icon"
+                />
+              </div>
+              <span class="treasure-container__info">улучшай лопату</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="public">
+        <div class="container public__container">
+          <div class="public__left wow fadeIn">
+            <h3 class="title public__title">Публичный раунд 1</h3>
+            <div class="public__timer public-timer" data-date="2024-7-31">
+              <div class="public-timer__item">
+                <span class="public-timer__count" id="timer-days">05</span
+                ><span class="public-timer__type">Дней</span>
+              </div>
+              <div class="public-timer__item">
+                <span class="public-timer__count" id="timer-hours">05</span
+                ><span class="public-timer__type">Часов</span>
+              </div>
+              <div class="public-timer__item">
+                <span class="public-timer__count" id="timer-minutes">05</span
+                ><span class="public-timer__type">Минут</span>
+              </div>
+              <div class="public-timer__item">
+                <span class="public-timer__count" id="timer-seconds">05</span
+                ><span class="public-timer__type">Секунд</span>
+              </div>
+            </div>
+            <div class="public__percent public-percent" data-percent="40">
+              <div class="public-percent__title"></div>
+              <div class="public-percent__content">
+                <div class="public-percent__lines"></div>
+              </div>
+            </div>
+            <form class="public__form public-form">
+              <div class="public-form__token">
+                <span class="public-form__label">Купите за USDT</span>
+                <div class="public-form__input-block">
+                  <input type="text" class="public-form__input" />
+                  <img src="./image/bnb.png" alt="" class="public-form__icon" />
+                </div>
+              </div>
+              <div class="public-form__token">
+                <span class="public-form__label">Получите TSHARDS</span>
+                <div class="public-form__input-block">
+                  <input type="text" class="public-form__input" />
+                  <img
+                    src="./image/aquamarine.png"
+                    alt=""
+                    class="public-form__icon"
+                  />
+                </div>
+              </div>
+              <button class="public-form__button button">купить</button>
+            </form>
+          </div>
+          <div class="public__right">
+            <ul class="public__list">
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-1.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">Привлечено:</span>
+                <span class="public__value">100 BNB</span>
+              </li>
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-2.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">Вы приобрели:</span>
+                <span class="public__value">1 000 000 TSHARDS</span>
+              </li>
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-3.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">Партнеров в Pre Sale: </span>
+                <span class="public__value">100</span>
+              </li>
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-4.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">Реферальная программа: </span>
+                <span class="public__value">5& B BNB</span>
+              </li>
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-5.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">1 TSHARDS = </span>
+                <span class="public__value">0.1 BNB</span>
+              </li>
+              <li class="public__item wow fadeIn">
+                <img
+                  src="./image/public-item-icon-6.png"
+                  alt=""
+                  class="public__icon"
+                />
+                <span class="public__type">Ваш доход с партнеров:</span>
+                <span class="public__value">1 BNB</span>
+              </li>
+            </ul>
+            <div class="public__ref public-ref wow fadeIn">
+              <span class="public-ref__title">Реферальная ссылка:</span>
+              <div class="public-ref__input-block">
+                <span class="public-ref__text"
+                  >Site.com/ref-09823477423658973423%$ggf4h357fs5422</span
+                >
+                <button class="public-ref__copy">
+                  Copy
+                  <img src="./image/pdf-icon-yellow.svg" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="presale">
+        <div class="container">
+          <h3 class="presale__title title title--white">о pre sale</h3>
+          <div class="presale__about wow fadeInUp">
+            На Pre Sale выделено
+            <span class="yellow">17 000 000 токенов</span> TSHARDS (17% от
+            эмиссии)
+          </div>
+          <div class="presale__info presale-info wow fadeInUp">
+            <img
+              src="./image/presalechart.png"
+              alt=""
+              class="presale-info__chart"
+            />
+            <h5 class="presale-info__title">К продаже 11 746 691 TSHARDS:</h5>
+            <ul class="presale__list">
+              <li class="presale__item">
+                <img
+                  src="./image/presale-icon.png"
+                  alt=""
+                  class="presale-__icon"
+                />
+                <span class="presale__text"
+                  >10 678 810 TSHARDS на прямую продажу за BNB</span
+                >
+              </li>
+              <li class="presale__item">
+                <img
+                  src="./image/presale-icon.png"
+                  alt=""
+                  class="presale__icon"
+                />
+                <span class="presale__text">1 067 881 TSHARDS на бонусы</span>
+              </li>
+            </ul>
+            <h5 class="presale-info__title presale-info__title--bottom">
+              В ликвидность выделено 5 253 311 токенов TSHARDS
+            </h5>
+          </div>
+          <div class="presale-percent-scroll">
+            <div class="presale__percent presale-percent wow fadeInUp">
+              <h3 class="title title--white presale-percent__title">
+                <span class="yellow">Бонусы </span> за покупку токенов TSHARDS
+                на Pre Sale:
+              </h3>
+              <div
+                class="presale-percent__line"
+                data-total="10"
+                data-progress="3.5"
+              >
+                <div class="presale-percent__progress"></div>
+                <ul class="presale-percent__list">
+                  <li class="presale-percent__item" data-numberPosition="1">
+                    <img
+                      src="./image/presale-percent-icon.png"
+                      alt=""
+                      class="presale-percent__icon"
+                    />
+                    <div class="presale-percent__text">
+                      <span class="presale-percent__value">1 - 1.99 BNB </span>
+                      <span class="presale-percent__type yellow"
+                        >+2% к токенам</span
+                      >
+                    </div>
+                  </li>
+                  <li class="presale-percent__item" data-numberPosition="2">
+                    <img
+                      src="./image/presale-percent-icon.png"
+                      alt=""
+                      class="presale-percent__icon"
+                    />
+                    <div class="presale-percent__text">
+                      <span class="presale-percent__value"> 2 - 3.99 BNB </span>
+                      <span class="presale-percent__type yellow"
+                        >+4% к токенам</span
+                      >
+                    </div>
+                  </li>
+                  <li class="presale-percent__item" data-numberPosition="4">
+                    <img
+                      src="./image/presale-percent-icon.png"
+                      alt=""
+                      class="presale-percent__icon"
+                    />
+                    <div class="presale-percent__text">
+                      <span class="presale-percent__value"> 4 - 5.99 BNB </span>
+                      <span class="presale-percent__type yellow"
+                        >+6% к токенам</span
+                      >
+                    </div>
+                  </li>
+                  <li class="presale-percent__item" data-numberPosition="6">
+                    <img
+                      src="./image/presale-percent-icon.png"
+                      alt=""
+                      class="presale-percent__icon"
+                    />
+                    <div class="presale-percent__text">
+                      <span class="presale-percent__value">6 - 7.99 BNB </span>
+                      <span class="presale-percent__type yellow"
+                        >+8% к токенам</span
+                      >
+                    </div>
+                  </li>
+                  <li class="presale-percent__item" data-numberPosition="8">
+                    <img
+                      src="./image/presale-percent-icon.png"
+                      alt=""
+                      class="presale-percent__icon"
+                    />
+                    <div class="presale-percent__text">
+                      <span class="presale-percent__value">8 - 10 BNB </span>
+                      <span class="presale-percent__type yellow"
+                        >+10% к токенам</span
+                      >
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="presale-bottom presale__bottom wow fadeInUp">
+            <div class="presale-bottom__program">
+              <h4 class="title presale-bottom__title">Реферальная программа</h4>
+              <ul class="presale__list presale-bottom__list">
+                <li class="presale__item presale__item--large">
+                  <img
+                    src="./image/presale-icon.png"
+                    alt=""
+                    class="presale__icon"
+                  />
+                  <span class="presale__text"
+                    >5% от суммы покупки в токенах BNB направляется на ваш адрес
+                  </span>
+                </li>
+              </ul>
+            </div>
+            <div class="presale-bottom__right">
+              <div class="presale-bottom__min-max">
+                <span class="presale-bottom__line">
+                  Минимальная покупка: <span class="brown"> 0.1 BNB</span>
+                </span>
+                <span class="presale-bottom__line"
+                  >Максимальная покупка: <span class="brown"> 10 BNB на 1</span>
+                </span>
+              </div>
+              <button class="presale-bottom__button button">
+                <img src="./image/pdf-icon.svg" alt="" />
+                PDF токеномики
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="legend">
+        <div class="container legend__container">
+          <div class="legend__left wow fadeInRight">
+            <img src="./image/legend-img-man.png" alt="" class="legend__img" />
+          </div>
+          <div class="legend__right wow fadeInLeft">
+            <h2 class="title">Легенда игры</h2>
+            <div class="legend__box">
+              <div class="legend__scroll">
+                <p class="legend__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Eligendi rem eum laudantium quibusdam numquam accusantium
+                  ducimus corrupti, voluptatem labore modi quae doloribus
+                  architecto, voluptatibus magnam illo perferendis. Inventore,
+                  enim expedita! Lorem ipsum dolor sit amet consectetur
+                  adipisicing elit. Quam accusamus hic ut odio repellat
+                  doloribus vitae exercitationem impedit, cumque, ducimus
+                  consequuntur? Necessitatibus, repellendus beatae. Sit hic ex
+                  nobis ducimus alias.
+                </p>
+                <p class="legend__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse
+                  enim optio non vero eius alias, ea ex? Ullam est corrupti
+                  consectetur dignissimos a nulla, cum magni assumenda? Ratione,
+                  rem quibusdam. Lorem ipsum dolor sit, amet consectetur
+                  adipisicing elit. Voluptatum corrupti quas optio facere rerum
+                  unde, suscipit molestiae incidunt eius consectetur, aut quo
+                  omnis possimus quam maiores. Magni tempore laudantium est.
+                </p>
+              </div>
+            </div>
+            <button class="legend__btn button">играть</button>
+          </div>
+        </div>
+      </section>
+      <section class="gameplay">
+        <div class="container">
+          <h3 class="title gameplay__title">Гейм плей</h3>
+          <ul class="gameplay__list">
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--one">01.</span
+              ><img
+                src="./image/gameplay-photo1.png"
+                alt=""
+                class="gameplay__img"
+              /><span class="gameplay__text"
+                >Покупка NFT лопаты на маркетиплейсе OpenSea</span
+              >
+            </li>
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--two">02.</span
+              ><img
+                src="./image/gameplay-photo2.png"
+                alt=""
+                class="gameplay__img"
+              /><span class="gameplay__text"
+                >Открытие ячеек за токены TSHARDS</span
+              >
+            </li>
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--three">03.</span
+              ><img
+                src="./image/gameplay-photo3.png"
+                alt=""
+                class="gameplay__img"
+              /><span class="gameplay__text"
+                >Получение компонентов лопаты для их улучшения, токены TSHARDS и
+                ключи для скрытия новых локаций.</span
+              >
+            </li>
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--four">04.</span
+              ><img
+                src="./image/gameplay-photo4.png"
+                alt=""
+                class="gameplay__img"
+              /><span class="gameplay__text">Улучшение лопаты</span>
+            </li>
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--five">05.</span
+              ><img
+                src="./image/gameplay-photo5.png"
+                alt=""
+                class="gameplay__img"
+              /><span class="gameplay__text"
+                >Обмен с другими игроками NFT лопаты, компонентами</span
+              >
+            </li>
+            <li class="gameplay__block wow fadeInUp">
+              <span class="gameplay__number gameplay__number--six">06.</span
+              ><img
+                src="./image/gameplay-photo6.png"
+                alt=""
+                class="gameplay__img"
+              />
+              <span class="gameplay__text"
+                >Приглашение друзей и создание команды</span
+              >
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="currency">
+        <div class="container">
+          <div class="currency__top">
+            <div class="currency__box wow fadeInLeft">
+              <h3 class="title currency__title">Токеномика</h3>
+              <p class="currency__text">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe,
+                ipsum earum. Quia nam nostrum iure minima cupiditate beatae, vel
+                illum itaque, quaerat, quos sequi. Iste quisquam officiis maxime
+                illo rem! Lorem ipsum dolor sit amet consectetur adipisicing
+                elit. Facere porro, aspernatur aliquam officia nam voluptatum
+                suscipit eaque ab? Maxime, rem fugit ut quas vero eius? Aut
+                laboriosam quaerat sint in!Lorem, ipsum dolor sit amet
+                consectetur adipisicing elit. Saepe, ipsum earum. Quia nam
+                nostrum iure minima cupiditate beatae, vel illum itaque,
+                quaerat, quos sequi. Iste quisquam officiis maxime illo rem!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+                porro, aspernatur aliquam officia nam voluptatum suscipit eaque
+                ab? Maxime, rem fugit ut quas vero eius? Aut laboriosam quaerat
+                sint in! Maxime, rem fugit ut quas vero eius? Aut laboriosam
+                quaerat sint in!enim saepe porro nesciunt!
+              </p>
+            </div>
+            <div class="currency__box wow fadeInRight">
+              <img
+                src="./image/currency-img.png"
+                alt=""
+                class="currency__img"
+              />
+            </div>
+            <div class="currency__desc">
+              <div class="currency__box wow fadeInLeft">
+                <p class="currency__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Libero quidem placeat tempora dolores nihil doloremque magnam
+                  commodi minima esse. Quod tenetur explicabo aliquam error
+                  dicta voluptatum repellat impedit autem molestiae. Lorem ipsum
+                  dolor sit, amet consectetur adipisicing elit. Eius iste
+                  consequuntur, rem, minima velit corporis blanditiis, ea
+                  repellat asperiores sed mollitia quaerat deserunt
+                </p>
+              </div>
+              <div class="currency__box wow fadeInRight">
+                <p class="currency__text">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Saepe, ipsum earum. Quia nam nostrum iure minima cupiditate
+                  beatae, vel illum itaque, quaerat, quos sequi. Iste quisquam
+                  officiis maxime illo rem! Lorem ipsum dolor sit amet
+                  consectetur adipisicing elit. Facere porro, aspernatur aliquam
+                  officia nam voluptatum suscipit eaque ab? Maxime, rem fugit ut
+                  quas vero eius? Aut laboriosam quaerat sint in!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="currency__center wow fadeInUp">
+            <img
+              src="./image/currency-percent.png"
+              alt=""
+              class="currency__percent"
+            />
+            <img
+              src="./image/currency-line.png"
+              alt=""
+              class="currency__line"
+            />
+            <ul class="currency__list">
+              <li class="currency__item currency__item--1">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">11.4%</span> Пресейл</span
+                >
+                <img
+                  src="./image/currency-round-1.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--2">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">5%</span> CEX листинг</span
+                >
+                <img
+                  src="./image/currency-round-2.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--3">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">3.6%</span> Аирдроп</span
+                >
+                <img
+                  src="./image/currency-round-3.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--4">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">20%</span> Стейкинг</span
+                >
+                <img
+                  src="./image/currency-round-4.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--5 currency__item--flex">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big"> 5% </span>Ликвидность</span
+                >
+                <img
+                  src="./image/currency-round-5.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--6 currency__item--flex">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">10%</span>Команда</span
+                >
+                <img
+                  src="./image/currency-round-6.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--7 currency__item--flex">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">10%</span> Партнеры</span
+                >
+                <img
+                  src="./image/currency-round-7.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+              <li class="currency__item currency__item--8 currency__item--flex">
+                <span class="currency__unit"
+                  ><span class="currency__unit-big">35%</span> Награды в
+                  игре</span
+                >
+                <img
+                  src="./image/currency-round-8.png"
+                  alt=""
+                  class="currency__round"
+                />
+              </li>
+            </ul>
+          </div>
+          <div class="currency__bottom">
+            <ul class="currency__inner">
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-1.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">На пресейл ?</p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-5.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">На ликвидность ?</p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-2.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На листинг CEX: 5 000 000 TSHARDS
+                  <span class="currency__text"
+                    >Первые 3 месяца заблокированы, затем 3 вестинг с
+                    постепенной ежедневной разблокировкой</span
+                  >
+                </p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-6.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На команду: 10 000 000 TSHARDS
+                  <span class="currency__text">
+                    Вестинг на 6 месяцев с постепенной ежедневной
+                    разблокировкой</span
+                  >
+                </p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-3.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На AirDrop: 3 000 000 TSHARDS
+                  <span class="currency__text">
+                    Изначально разблокированы. После раздачи аирдропа
+                    пользователям вестинг периода 3 месяца с постепенной
+                    ежедневной разблокировкой
+                  </span>
+                </p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-7.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На партнёров: 10 000 000 TSHARDS
+                  <span class="currency__text"
+                    >Вестинг на 6 месяцев с постепенной ежедневной
+                    разблокировкой</span
+                  >
+                </p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-4.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На стейкинг: 20 000 000 TSHARDS
+                  <span class="currency__text">
+                    Вестинг на 1 год. 2 000 000 токенов доступны сразу.
+                    Остальные в вестинге на год с постепенной ежедневной
+                    разблокировкой.</span
+                  >
+                </p>
+              </li>
+              <li class="currency__inner-item wow fadeInUp">
+                <img
+                  src="./image/currency-round-8.png"
+                  alt=""
+                  class="currency__image"
+                />
+                <p class="currency__subtitle">
+                  На награды в игре: 35 000 000 TSHARDS
+                  <span class="currency__text">
+                    Вестинг на 1 год. 3 500 000 токенов доступны сразу.
+                    Остальные в вестинге на год с постепенной ежедневной
+                    разблокировкой</span
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="roadmap">
+        <div class="container">
+          <h3 class="roadmap__title title">дорожная карта</h3>
+          <div class="swiper roadmap__swiper wow fadeInUp">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Май 2024 </span>
+                  <h5 class="roadmap__titles">Создание нашей компании</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Nulla officiis veniam in accusamus animi eligendi,
+                    architecto odit ab, perferendis quae veritatis? Laudantium
+                    rerum modi quas!
+                  </p>
+                  <span class="roadmap__number roadmap__number--bottom">1</span>
+                  <img
+                    src="./image/roadmap-line.svg"
+                    class="roadmap__line roadmap__line--bottom"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Июнь 2024 </span>
+                  <h5 class="roadmap__titles">Развитие нашей компании</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Architecto, dolorem. Dolorem, laudantium in! Quod soluta
+                    architecto illo exercitationem saepe, ipsa sit aliquam nam.
+                    Adipisci iusto id rem voluptatibus. Eum architecto veniam
+                    commodi exercitationem est id voluptatibus neque nulla ad
+                  </p>
+                  <span class="roadmap__number roadmap__number--top">2</span>
+                  <img
+                    src="./image/roadmap-line-2.svg"
+                    class="roadmap__line roadmap__line--top"
+                    alt=""
+                  />
+                  <img
+                    src="./image/roadmap-slide-crist.png"
+                    class="roadmap__criest roadmap__criest--bottom"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Июль 2024 </span>
+                  <h5 class="roadmap__titles">Привлечение партнеров</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Explicabo facilis, totam unde officia earum temporibus modi
+                    quo possimus, ad magnam adipisci quaerat. Architecto, optio
+                    totam minus illum est pariatur itaque?
+                  </p>
+                  <span class="roadmap__number roadmap__number--bottom">3</span>
+                  <img
+                    src="./image/roadmap-line.svg"
+                    class="roadmap__line roadmap__line--bottom"
+                    alt=""
+                  />
+                  <img
+                    src="./image/roadmap-slide-crist.png"
+                    class="roadmap__criest roadmap__criest--top"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Август 2024 </span>
+                  <h5 class="roadmap__titles">Подведение итогов</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et
+                    alias eos, maxime unde nesciunt aliquid? Ducimus
+                    voluptatibus voluptas, eaque, aspernatur laborum sapiente
+                    sed perferendis veritatis, magni expedita sequi? Optio
+                  </p>
+                  <span class="roadmap__number roadmap__number--top">4</span>
+                  <img
+                    src="./image/roadmap-line-2.svg"
+                    class="roadmap__line roadmap__line--top"
+                    alt=""
+                  />
+                  <img
+                    src="./image/roadmap-slide-crist.png"
+                    class="roadmap__criest roadmap__criest--bottom"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Май 2024 </span>
+                  <h5 class="roadmap__titles">Создание нашей компании</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Magnam temporibus ducimus eligendi laborum! Libero,
+                    deleniti?
+                  </p>
+                  <span class="roadmap__number roadmap__number--bottom">5</span>
+                  <img
+                    src="./image/roadmap-line.svg"
+                    class="roadmap__line roadmap__line--bottom"
+                    alt=""
+                  />
+                  <img
+                    src="./image/roadmap-slide-crist.png"
+                    class="roadmap__criest roadmap__criest--top"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-slide roadmap__slide">
+                <div class="roadmap__content">
+                  <span class="roadmap__date">Май 2024 </span>
+                  <h5 class="roadmap__titles">Создание нашей компании</h5>
+                  <p class="roadmap__text">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Repellat a error aperiam ratione qui beatae. Magnam qui vel,
+                    harum deleniti facere animi. Sequi, dicta reprehenderit!
+                  </p>
+                  <span class="roadmap__number roadmap__number--top">6</span>
+                  <img
+                    src="./image/roadmap-slide-crist.png"
+                    class="roadmap__criest roadmap__criest--bottom"
+                    alt=""
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="swiper-button-prev roadmap__button roadmap__button-prev"
+            >
+              <img
+                src="./image/roadmap_btn_prev.png"
+                alt=""
+                class="roadmap__btn"
+              />
+            </div>
+            <div
+              class="swiper-button-next roadmap__button roadmap__button-next"
+            >
+              <img src="./image/roadmap_btn.png" alt="" class="roadmap__btn" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <h3 class="title title--white footer__title">Наши партнеры</h3>
+        <ul class="footer__list wow fadeIn">
+          <li class="footer__item">
+            <img src="./image/footer-img1.png" alt="" class="footer__img" />
+          </li>
+          <li class="footer__item">
+            <img src="./image/footer-img2.png" alt="" class="footer__img" />
+          </li>
+          <li class="footer__item">
+            <img src="./image/footer-img3.png" alt="" class="footer__img" />
+          </li>
+          <li class="footer__item">
+            <img src="./image/footer-img4.png" alt="" class="footer__img" />
+          </li>
+          <li class="footer__item">
+            <img src="./image/footer-img5.png" alt="" class="footer__img" />
+          </li>
+        </ul>
+        <div class="footer__bottom wow fadeIn">
+          <div class="footer__left">
+            <nav class="footer__menu footer-menu">
+              <ul class="footer-menu__list">
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link">Pre Sale</a>
+                </li>
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link">Об игре</a>
+                </li>
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link">ГеймПлей</a>
+                </li>
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link">Токеномика</a>
+                </li>
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link">RoadMap</a>
+                </li>
+                <li class="footer-menu__item">
+                  <img
+                    src="./image/footer-sign-small.png"
+                    alt=""
+                    class="footer-menu__img"
+                  />
+                  <a href="#" class="footer-menu__link"
+                    >Электронное соглашение</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="footer__info">
+              <div class="footer__social-network">
+                <a href="#" target="_blank" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="26px"
+                    height="25px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="rgb(255, 255, 255)"
+                      d="M12.904,24.978 C6.124,24.978 0.628,19.481 0.628,12.702 C0.628,5.922 6.124,0.426 12.904,0.426 C19.683,0.426 25.179,5.922 25.179,12.702 C25.179,19.481 19.683,24.978 12.904,24.978 ZM12.904,1.542 C6.740,1.542 1.744,6.539 1.744,12.702 C1.744,18.865 6.740,23.862 12.904,23.862 C19.067,23.862 24.063,18.865 24.063,12.702 C24.063,6.539 19.067,1.542 12.904,1.542 ZM15.327,18.078 C15.275,18.078 15.244,18.060 15.214,18.020 C14.327,16.858 12.519,14.497 12.497,14.469 C12.437,14.536 10.356,16.909 9.371,18.031 C9.352,18.053 9.317,18.075 9.290,18.075 C8.732,18.078 7.604,18.073 7.586,18.068 C8.953,16.508 10.313,14.956 11.678,13.399 C10.238,11.519 8.802,9.644 7.356,7.755 C7.401,7.755 9.736,7.756 10.876,7.753 C10.944,7.753 10.986,7.773 11.028,7.827 C11.830,8.890 13.458,11.035 13.472,11.053 C13.614,10.891 15.508,8.727 16.316,7.807 C16.339,7.781 16.382,7.757 16.416,7.757 C16.958,7.754 18.073,7.757 18.107,7.758 C16.826,9.220 15.555,10.670 14.280,12.126 C15.781,14.107 17.279,16.083 18.785,18.072 C18.750,18.074 16.452,18.077 15.327,18.078 ZM10.483,8.800 C10.464,8.776 10.433,8.746 10.408,8.746 C10.078,8.743 9.749,8.744 9.402,8.744 C9.425,8.775 13.620,14.257 15.704,16.980 C15.733,17.019 15.762,17.034 15.811,17.034 C16.087,17.032 16.682,17.030 16.712,17.027 C16.690,16.998 11.199,9.744 10.483,8.800 Z"
+                    />
+                  </svg>
+                </a>
+                <a href="#" target="_blank" class="footer__link">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="26px"
+                    height="25px"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      fill="rgb(255, 255, 255)"
+                      d="M12.847,24.978 C6.067,24.978 0.571,19.481 0.571,12.702 C0.571,5.922 6.067,0.426 12.847,0.426 C19.627,0.426 25.123,5.922 25.123,12.702 C25.123,19.481 19.627,24.978 12.847,24.978 ZM12.847,1.542 C6.684,1.542 1.687,6.539 1.687,12.702 C1.687,18.865 6.684,23.862 12.847,23.862 C19.011,23.862 24.007,18.865 24.007,12.702 C24.007,6.539 19.011,1.542 12.847,1.542 ZM16.633,17.255 C16.633,17.255 16.569,17.990 16.026,18.118 C15.482,18.246 14.587,17.670 14.427,17.542 C14.299,17.446 12.028,16.008 11.197,15.304 C10.973,15.113 10.717,14.729 11.229,14.281 C12.380,13.226 13.755,11.915 14.587,11.084 C14.970,10.700 15.354,9.805 13.755,10.892 C11.485,12.458 9.246,13.930 9.246,13.930 C9.246,13.930 8.735,14.249 7.775,13.962 C6.816,13.673 5.697,13.290 5.697,13.290 C5.697,13.290 4.929,12.810 6.240,12.299 C6.240,12.299 11.773,10.029 13.691,9.230 C14.427,8.910 16.921,7.887 16.921,7.887 C16.921,7.887 18.072,7.439 17.976,8.526 C17.944,8.974 17.688,10.541 17.433,12.235 C17.049,14.633 16.633,17.255 16.633,17.255 Z"
+                    />
+                  </svg>
+                </a>
+              </div>
+              <button class="button">играть</button>
+            </div>
+          </div>
+          <div class="footer__center">
+            <div class="logo logo--footer">
+              <div class="logo__img">
+                <img
+                  class="logo__image logo__image--footer"
+                  src="./image/logo.png"
+                  alt="logo"
+                />
+              </div>
+              <span class="logo__text">TReasure</span>
+              <span class="logo__text">Hunters</span>
+            </div>
+          </div>
+          <div class="footer__right">
+            <div class="footer__box">
+              <span class="footer__subject">Электронное соглашение</span>
+              <p class="footer__text">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sapiente quaerat ipsum fuga fugiat ipsam labore possimus, rerum
+                dicta nam neque qui repudiandae ipsa quae est, nemo cupiditate.
+                Tempore, deleniti odio.orem ipsum dolor sit amet consectetur
+                adipisicing elit. Sapiente quaerat ipsum fuga fugiat ipsam
+                labore possimus.
+              </p>
+            </div>
+            <button class="footer__btn button">
+              <img src="./image/pdf-icon.svg" alt="" />
+              PDF токеномики
+            </button>
+          </div>
+        </div>
+        <p class="footer__copyright wow fadeInUp">
+          "Treasure Hunters" все права защищены © 2024
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

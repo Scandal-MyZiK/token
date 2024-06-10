@@ -1,0 +1,132 @@
+.roadmap {
+  padding: 130px 0 160px;
+  margin-top: -110px;
+  background-image: url("../image/roadmap-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #000;
+
+  @media (max-width: 1050px) {
+    padding-top: 85px;
+    padding-bottom: 120px;
+  }
+
+  &__title {
+    color: var(--color-white);
+    text-align: center;
+  }
+
+  &__button {
+    width: 56px !important;
+    height: 64px !important;
+    &::after {
+      display: none;
+    }
+    &-prev {
+      left: auto !important;
+      top: 0 !important;
+      right: 75px !important;
+      margin-top: 0 !important;
+    }
+    &-next {
+      top: 0 !important;
+      right: 0 !important;
+      margin-top: 0 !important;
+    }
+  }
+
+  &__swiper {
+    padding-top: 155px !important;
+    margin-top: -30px;
+    padding-bottom: 75px !important;
+
+    @media (max-width: 700px) {
+      margin-top: 10px;
+      padding-top: 80px !important;
+    }
+  }
+
+  &__content {
+    padding: 80px 35px;
+    width: 100%;
+    min-height: 477px;
+    max-width: 100%;
+    background-image: url("../image/roadmap-slide-bg.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    text-align: center;
+
+    @media screen and (max-width: 1300px) {
+      margin-left: auto;
+    }
+  }
+
+  &__date,
+  &__text {
+    color: #fff;
+  }
+
+  &__titles {
+    font-size: 18px;
+    font-family: "FarCryCyr", sans-serif;
+    color: var(--color-yellow2);
+    margin: 15px 0;
+  }
+
+  &__text {
+    max-height: 220px;
+    overflow: auto;
+  }
+
+  &__number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    background-image: url("../image/roadmap-slide-icon.png");
+    background-repeat: no-repeat;
+    line-height: 1;
+    background-size: contain;
+    font-size: 16px;
+    font-family: "FarCryCyr";
+    color: rgb(90, 49, 10);
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    z-index: 2;
+    &--bottom {
+      top: auto;
+      bottom: 35px;
+      right: 50px;
+    }
+  }
+
+  &__line {
+    position: absolute;
+    right: -103px;
+    bottom: -73px;
+    z-index: 1;
+    &--top {
+      right: -110px;
+      bottom: auto;
+      top: -59px;
+    }
+  }
+
+  &__slide {
+    transform: none !important;
+    width: 270px !important;
+  }
+
+  &__criest {
+    position: absolute;
+    left: 38px;
+    bottom: 31px;
+    &--top {
+      bottom: auto;
+      top: 42px;
+      left: 44px;
+    }
+  }
+}

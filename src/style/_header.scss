@@ -1,0 +1,124 @@
+.header {
+  @media (max-width: 1000px) {
+    padding-bottom: 82px;
+  }
+
+  min-height: 100vh;
+  background-image: url("../image/header-bg.png");
+  background-size: cover;
+  padding-bottom: 120px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: -0;
+  @media (max-width: 800px) {
+    min-height: 0;
+  }
+  &__menu {
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1090px) {
+      flex-direction: column;
+      gap: 14px;
+    }
+    @media (max-width: 1000px) {
+      padding: 10px 0 0;
+    }
+    @media (max-width: 680px) {
+      flex-direction: row;
+    }
+  }
+
+  &__list-mobi {
+    display: none;
+    @media (max-width: 1090px) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+      width: 70%;
+    }
+    @media (max-width: 1000px) {
+      width: 80%;
+    }
+    @media (max-width: 900px) {
+      width: 90%;
+    }
+    @media (max-width: 680px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+      position: absolute;
+      width: 100%;
+      top: 0;
+      left: 0px;
+      padding: 100px 0 30px;
+      background-color: #00b3b3;
+      transform: translateY(-110%);
+      transition: 0.5s;
+    }
+    @media (max-width: 430px) {
+      padding: 140px 0 30px;
+      gap: 15px;
+    }
+    &.active {
+      @media (max-width: 680px) {
+        transform: translateY(0);
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    @media (max-width: 1090px) {
+      display: none;
+    }
+
+    &--little {
+      gap: 36.5px;
+    }
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+
+  &__link {
+    color: var(--color-white);
+    transition: 0.3s;
+
+    svg path {
+      fill: var(--color-white);
+      transition: 0.3s;
+    }
+
+    &:hover {
+      color: var(--color-blue);
+      text-shadow: 3px 3px 15px var(--color-blue);
+
+      svg path {
+        fill: var(--color-blue);
+      }
+    }
+  }
+
+  &__content {
+    margin-top: 65px;
+    @media (max-width: 1000px) {
+      margin-top: 20px;
+    }
+  }
+}
+
+.header-content {
+  &__img {
+    max-width: 100%;
+    display: block;
+  }
+}

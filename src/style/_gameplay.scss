@@ -1,0 +1,113 @@
+.gameplay {
+  background-image: url("../image/gameplay-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 180px 0 240px;
+  margin-top: -75px;
+  @media (max-width: 900px) {
+    padding: 100px 0 240px;
+  }
+  &__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+  &__list {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    @media (max-width: 1299px) {
+      justify-content: space-evenly;
+    }
+    @media (max-width: 700px) {
+      justify-content: space-between;
+    }
+    @media (max-width: 566px) {
+      justify-content: center;
+    }
+  }
+  &__block {
+    position: relative;
+    width: 370px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media (max-width: 880px) {
+      width: 33%;
+    }
+    @media (max-width: 700px) {
+      width: 40%;
+      width: 240px;
+    }
+    @media (max-width: 650px) {
+      width: 240px;
+    }
+    @media (max-width: 566px) {
+      max-width: 370px;
+      width: 90%;
+    }
+  }
+  &__number {
+    position: absolute;
+    padding: 4px 38px;
+    font-size: 16px;
+    font-family: "FarCryCyr", sans-serif;
+    color: rgb(89, 23, 62);
+    line-height: 1.875;
+    text-align: center;
+    background-image: url("../image/gameplay-signboard.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    &--one {
+      top: 98px;
+    }
+    &--two {
+      top: 8px;
+    }
+    &--three {
+      top: 78px;
+    }
+    &--four {
+      top: 76px;
+    }
+    &--five {
+      top: 28px;
+    }
+    &--six {
+      top: 60px;
+      @media (max-width: 810px) {
+        top: 32px;
+      }
+    }
+    @media (max-width: 880px) {
+      padding: 0px 24px;
+      font-size: 14px;
+    }
+    @media (max-width: 864px) {
+      padding: 0px 20px;
+      font-size: 12px;
+    }
+    @media (max-width: 566px) {
+      padding: 4px 38px;
+      font-size: 16px;
+    }
+    @media (max-width: 400px) {
+      padding: 0px 24px;
+      font-size: 14px;
+    }
+  }
+  &__img {
+    max-width: 371px;
+    @media (max-width: 880px) {
+      max-width: 100%;
+    }
+  }
+  &__text {
+    color: rgb(17, 22, 47);
+    line-height: 1.333;
+    text-align: left;
+    width: 231px;
+  }
+}

@@ -1,0 +1,16 @@
+.button {
+  width: 243px;
+  padding: 11.5px 5px;
+  text-align: center;
+  font-size: 16px;
+  font-family: "FarCryCyr";
+  color: rgb(254, 254, 254);
+  line-height: 1.875;
+  background-image: url("../image/legend-btn.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: 0.3s;
+  &:hover {
+    color: rgb(223, 223, 223);
+  }
+}

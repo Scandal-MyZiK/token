@@ -1,0 +1,9 @@
+.title {
+  font-size: 24px;
+  font-family: "FarCryCyr", sans-serif;
+  color: rgb(17, 22, 47);
+  line-height: 1.25;
+  &--white {
+    color: var(--color-white);
+  }
+}
